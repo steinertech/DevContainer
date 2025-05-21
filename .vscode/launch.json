@@ -1,22 +1,22 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "App.Web",
-            "command": "npm start --prefix App.Web",
-            "request": "launch",
-            "type": "node-terminal"
-        },
-        {
-            "name": "App.Server",
-            "type": "dotnet",
-            "request": "launch",
-            "projectPath": "${workspaceFolder}/App.Server/App.Server.csproj"
-        }
-    ],
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "App.Web",
+      "command": "npm start --prefix App.Web",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "name": "App.Server",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:azureFunctions.pickProcess}"
+    }
+  ],
   "compounds": [
     {
       "name": "App.Server/App.Web",
@@ -25,5 +25,5 @@
         "App.Web"
       ],
       "stopAll": true
-    }    
-}
+    }
+  }
