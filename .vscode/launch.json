@@ -5,25 +5,27 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "App.Web",
-      "command": "npm start --prefix App.Web",
-      "request": "launch",
-      "type": "node-terminal"
-    },
-    {
       "name": "App.Server",
       "type": "coreclr",
       "request": "attach",
       "processId": "${command:azureFunctions.pickProcess}"
+    },
+    {
+      "name": "App.Web",
+      "preLaunchTask": "echohello",
+      "command": "npm start --prefix App.Web",
+      "request": "launch",
+      "type": "node-terminal"
     }
   ],
   "compounds": [
     {
-      "name": "App.Server/App.Web",
+      "name": "Run",
       "configurations": [
         "App.Server",
         "App.Web"
       ],
       "stopAll": true
     }
-  }
+  ]
+}

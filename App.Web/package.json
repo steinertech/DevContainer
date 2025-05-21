@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "export NG_FORCE_TTY=0 && ng serve", "//": "NG_FORCE_TTY prevent ng completion confirmation on terminal",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
