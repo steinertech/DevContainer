@@ -13,6 +13,8 @@ Folders with config
 * .devcontainer
 
 ## App.Server Url
+**Note** Make all ports public
+
 Works with curl command. In browser CORS error!
 ```
 echo $GITHUB_TOKEN
