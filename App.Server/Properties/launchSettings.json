@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "App_Server": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7070",
+      "launchBrowser": false
+    }
+  }
+}
