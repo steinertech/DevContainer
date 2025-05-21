@@ -1,3 +1,5 @@
 {
-    "dotnet.defaultSolution": "App.sln"
+    "dotnet.defaultSolution": "App.sln",
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "files.autoSave": "off"
 }
