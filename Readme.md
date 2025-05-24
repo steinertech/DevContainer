@@ -1,6 +1,6 @@
 # DevContainer
 
-VSCode with two apps. Start with CodeSpaces.
+VSCode start with CodeSpaces.
 
 * App.Server (Azure Function)
 * App.Web (Angular)
